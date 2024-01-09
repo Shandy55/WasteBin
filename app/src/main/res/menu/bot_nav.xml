@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/Homefrag"
+        android:title="Home"
+        android:icon="@drawable/home"/>
+    <item android:id="@+id/Maps"
+        android:title="Maps"
+        android:icon="@drawable/location"/>
+    <item android:id="@+id/History"
+        android:title="History"
+        android:icon="@drawable/history"/>
+    <item android:id="@+id/Akun"
+        android:title="Akun"
+        android:icon="@drawable/akun"/>
+</menu>

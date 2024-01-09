@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <color name="grey">#aaa</color>
+    <color name="button_color">#1E573B</color>
+
+    <color name="yellow">#FFEB3B</color>
+    <color name="red">#F44336</color>
+    <color name="primary">#1B023B</color>
+    <color name="secondary">#FFO3DAC5</color>
+
+    <color name="layout_background">#262835</color>
+    <color name="card_back">#3C736E</color>
+    <color name="text_hint">#373E68</color>
+
+    <color name="uw">#FF9800</color>
+    <color name="nor">#15D8C5</color>
+    <color name="over">#F44336</color>
+    <color name="oves">#8BC34A</color>
+    <color name="night_mode">#6124B1</color>
+    <color name="notifications">#13B2C3</color>
+    <color name="private_acc">#E6A326</color>
+    <color name="security">#D95F69</color>
+    <color name="navigasi">#D30C0C</color>
+
+    <color name="red_200">#ff7961</color>
+    <color name="red_500">#f44336</color>
+    <color name="red_700">#ba000d</color>
+    <color name="yellow_300">#FFD600</color>
+    <color name="yellow_700">#FF6D00</color>
+    <color name="gray">#2B2B2B</color>
+    <color name="Hijautua">#3e6a51</color>
+    <color name="hijaumuda">#64a682</color>
+    <color name="ungumuda">#b45c8c</color>
+    <color name="ungutua">#61305d</color>
+    <color name="biru">#3F51B5</color>
+</resources>

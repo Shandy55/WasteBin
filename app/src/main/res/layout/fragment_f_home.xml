@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".f_home">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/idTVHead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="Pie Chart"
+            android:background="@color/hijaumuda"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Single parent layout to wrap the two LinearLayouts -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- First LinearLayout -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/round_back_white_10_20"
+                    android:orientation="vertical"
+                    android:padding="0.5dp">
+                    <!-- Content for the first PieChart -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                      >
+                        <com.github.mikephil.charting.charts.PieChart
+                            android:id="@+id/pieChart"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_below="@id/idTVHead"
+                            android:layout_marginTop="5dp"
+                            tools:ignore="NotSibling" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="140dp"
+                            android:layout_centerVertical="true"
+                            android:drawableTint="@color/purple_200"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:textSize="20dp"
+                            android:padding="4dp"
+                            android:text="Non Logam"
+                            android:textAlignment="center"
+                            android:textColor="@color/white" />
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/nonlogam"
+                            android:foregroundGravity="center"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <!-- Second LinearLayout -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="@drawable/round_back_grey_10_20"
+                    android:orientation="vertical"
+                    android:padding="0.5dp">
+                    <!-- Content for the second PieChart -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                       >
+                        <com.github.mikephil.charting.charts.PieChart
+                            android:id="@+id/pieChart2"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_below="@id/idTVHead"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="5dp"
+                            tools:ignore="NotSibling" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="150dp"
+                            android:layout_centerVertical="true"
+                            android:drawableTint="@color/purple_200"
+                            android:layout_marginRight="10dp"
+                            android:textSize="20dp"
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:text="Logam"
+                            android:textAlignment="center"
+                            android:textColor="@color/white" />
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/logam"
+                            android:foregroundGravity="center"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/round_back_whitereal_10_20"
+                android:orientation="vertical"
+                android:padding="0.5dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/chartConsumptionGraph"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="12dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/streaming_connectBroker"/>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</FrameLayout>

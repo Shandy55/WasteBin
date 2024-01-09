@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".f_akun">
+
+    <!-- TODO: Update blank fragment layout -->
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/Hijautua">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:layout_centerInParent="true"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+        </RelativeLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/settings_acc_logo"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="Shandy Handika"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+62 8123456678"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/editprof"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/round_back_sec_100"
+                    android:paddingStart="30dp"
+                    android:paddingEnd="30dp"
+                    android:text="Edit profile"
+                    android:textAllCaps="false"
+                    android:textColor="@color/primary"
+                    android:onClick="goToSettingsFragment"/>
+                <LinearLayout
+                    android:background="@drawable/round_back_white_10_20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="40dp"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <!--                darkmode-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_marginTop="8dp"
+                            android:id="@+id/nightModeicon"
+                            android:layout_height="40dp"
+                            android:src="@drawable/night_mode_icon"
+                            android:background="@drawable/round_back_night_mode"
+                            android:padding="12dp"/>
+                        <TextView
+                            android:layout_marginStart="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="NightMode"
+                            android:textSize="18dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:layout_toEndOf="@+id/nightModeicon" />
+
+
+                    </RelativeLayout>
+
+                    <!--                //Notification-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_marginTop="8dp"
+                            android:id="@+id/notificationicon"
+                            android:layout_height="40dp"
+                            android:src="@drawable/notif_icon"
+                            android:background="@drawable/round_back_notification"
+                            android:padding="12dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toEndOf="@+id/notificationicon"
+                            android:text="Notification"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+
+                    <!--                //private-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_marginTop="8dp"
+                            android:id="@+id/privateicon"
+                            android:layout_height="40dp"
+                            android:src="@drawable/private_account"
+                            android:background="@drawable/round_back_private"
+                            android:padding="12dp"/>
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Private account"
+                            android:textSize="18dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:layout_toEndOf="@+id/privateicon" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <!--security-->
+                <Button
+                    android:layout_width="30mm"
+                    android:layout_height="40dp"
+                    android:id="@+id/exit"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="LogOut"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:background="@color/Hijautua"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>
