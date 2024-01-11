@@ -1,10 +1,13 @@
 package com.example.wastebin
 
+import android.app.AlertDialog
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -33,8 +36,42 @@ class f_akun : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        var settingsview : View = inflater.inflate(R.layout.fragment_f_akun, container, false)
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_f_akun, container, false)
+        var btnkeluar = settingsview.findViewById<Button>(R.id.exit)
+        btnkeluar.setOnClickListener {
+            showLogoutConfirmationDialog()
+
+        }
+
+        return settingsview }
+    private fun showLogoutConfirmationDialog() {
+        val builder = AlertDialog.Builder(requireContext())
+        builder.setTitle("Logout")
+        builder.setMessage("Anda yakin ingin logout?")
+
+        // Tombol positif (ya)
+        builder.setPositiveButton("Ya") { dialog, which ->
+            // Tambahkan kode logout di sini
+            // Contoh: Keluar dari sesi pengguna, hapus token akses, dll.
+            performLogout()
+        }
+
+        // Tombol negatif (batal)
+        builder.setNegativeButton("Batal") { dialog, which ->
+            // Batal logout, tutup dialog
+            dialog.dismiss()
+        }
+
+        val dialog: AlertDialog = builder.create()
+        dialog.show()
+    }
+
+    private fun performLogout() {
+        // Tambahkan logika logout di sini
+        // Contoh: Keluar dari sesi pengguna, hapus token akses, dll.
+        val intent = Intent(requireContext(), Login::class.java)
+        startActivity(intent)
     }
 
     companion object {

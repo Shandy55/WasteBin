@@ -10,6 +10,8 @@ class Navigasi : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_navigasi)
         var bottomnav = findViewById<BottomNavigationView>(R.id.nav_menu)
+        loadFragment(f_home())
+        true
         bottomnav.setOnItemSelectedListener{
             when(it.itemId) {
                 R.id.Homefrag->{

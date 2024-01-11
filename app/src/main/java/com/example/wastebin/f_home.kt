@@ -117,8 +117,8 @@ class f_home : Fragment() {
         // on below line we are creating array list and
         // adding data to it to display in pie chart
         val entries: ArrayList<PieEntry> = ArrayList()
-//        entries.add(PieEntry(0f))
-//        entries.add(PieEntry(100f))
+        entries.add(PieEntry(53f))
+        entries.add(PieEntry(0f))
 
         // on below line we are setting pie data set
         val dataSet = PieDataSet(entries, "Mobile OS")
